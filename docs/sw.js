@@ -1,5 +1,7 @@
-const CACHE='ddalkkak-v2.0.0';
-const FILES=["./", "./index.html", "./install.js", "./manifest.webmanifest", "./style.css", "./audio-data.js", "./app.js", "./assets/image2.jpeg", "./assets/image1.png", "./icons/icon-192.png", "./icons/icon-512.png", "./assets/music/firstlight.mp3", "./assets/music/jrpg.mp3", "./assets/music/sunset.mp3", "./assets/music/vaporware.mp3"];
+const CACHE='ddalkkak-v2.1.0';
+const FILES=["./", "./index.html", "./install.js", "./manifest.webmanifest", "./style.css", "./audio-data.js", "./app.js", "./mobile.js", "./assets/image2.jpeg", "./assets/image1.png", "./icons/icon-192.png", "./icons/icon-512.png", "./assets/music/firstlight.mp3", "./assets/music/jrpg.mp3", "./assets/music/sunset.mp3", "./assets/music/vaporware.mp3"];
 self.addEventListener('install',e=>{e.waitUntil((async()=>{const cache=await caches.open(CACHE);await cache.addAll(FILES);})())});
 self.addEventListener('activate',e=>{e.waitUntil((async()=>{for(const k of await caches.keys())if(k.startsWith('ddalkkak-')&&k!==CACHE)await caches.delete(k);await self.clients.claim()})())});
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==location.origin)return;e.respondWith((async()=>{const cache=await caches.open(CACHE);if(e.request.mode==='navigate'){const page=await cache.match('./index.html');if(page)return page}return await cache.match(e.request,{ignoreSearch:true})||fetch(e.request)})())});
+
+self.addEventListener('message',e=>{if(e.data?.type==='SKIP_WAITING')self.skipWaiting()});

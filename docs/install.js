@@ -15,10 +15,19 @@ $('installBtn').addEventListener('click',async()=>{
 $('shareWav').addEventListener('click',async()=>{if(!window.lastRhythmFile)return;try{await navigator.share({files:[window.lastRhythmFile],title:'딸깍 내 리듬'})}catch(e){if(e.name!=='AbortError')$('recordInfo').textContent='공유를 실행하지 못했어요. WAV 저장 버튼으로 다운로드해주세요.'}});
 if(actualIOS){$('hapticStatus').textContent='아이폰 웹은 진동을 지원하지 않아요. 소리와 눌림 효과로 즐겨주세요.'}
 const status=$('offlineStatus');
+let requestedUpdate=false;
+navigator.serviceWorker?.addEventListener('controllerchange',()=>{if(requestedUpdate)location.reload()});
+function offerUpdate(reg){
+ if(!reg.waiting||$('updateApp'))return;
+ const b=document.createElement('button');b.id='updateApp';b.className='btn small';b.textContent='업데이트';
+ b.onclick=()=>{if($('recordBtn').getAttribute('aria-pressed')==='true'){status.textContent='녹음을 마친 뒤 업데이트해주세요';return}requestedUpdate=true;reg.waiting?.postMessage({type:'SKIP_WAITING'})};
+ document.querySelector('.header-right').append(b);
+}
+
 if('serviceWorker' in navigator&&location.protocol!=='file:'){
  navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(reg=>{
  const show=()=>{if(reg.active)status.textContent='오프라인 사용 준비 완료';else status.textContent='음원 저장 중 · 잠시 기다려주세요'};
- show();reg.addEventListener('updatefound',()=>{const w=reg.installing;w?.addEventListener('statechange',()=>{if(w.state==='activated')show();if(w.state==='installed'&&navigator.serviceWorker.controller){status.textContent='새 버전 준비됨 · 앱을 모두 닫고 다시 여세요'}})});
+ show();offerUpdate(reg);reg.addEventListener('updatefound',()=>{const w=reg.installing;w?.addEventListener('statechange',()=>{if(w.state==='activated')show();if(w.state==='installed'&&navigator.serviceWorker.controller){status.textContent='새 버전 준비됨 · 업데이트를 눌러주세요';offerUpdate(reg)}})});
  navigator.serviceWorker.ready.then(()=>{status.textContent='오프라인 사용 준비 완료'});
  }).catch(()=>{status.textContent='오프라인 저장 실패 · 온라인 사용 가능'});
 }else status.textContent='온라인 모드';
