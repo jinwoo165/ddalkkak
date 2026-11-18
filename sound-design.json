@@ -1,0 +1,233 @@
+[
+  {
+    "id": "shape_dubai",
+    "name": "두쫀쿠 크런치",
+    "en": "Original synthesized dubai",
+    "desc": "바사삭 · 쫀득한 여운",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_chocolate",
+    "name": "초콜릿 톡",
+    "en": "Original synthesized chocolate",
+    "desc": "톡 · 단단한 한 조각",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_mochi",
+    "name": "모찌 뽀득",
+    "en": "Original synthesized mochi",
+    "desc": "뽀득 · 말랑한 눌림",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_macaron",
+    "name": "마카롱 파삭",
+    "en": "Original synthesized macaron",
+    "desc": "파삭 · 폭신한 크림",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_donut",
+    "name": "도넛 슈가",
+    "en": "Original synthesized donut",
+    "desc": "사르륵 · 설탕 알갱이",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_pudding",
+    "name": "푸딩 탱글",
+    "en": "Original synthesized pudding",
+    "desc": "또잉 · 탱글한 울림",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_croissant",
+    "name": "크루아상 결",
+    "en": "Original synthesized croissant",
+    "desc": "파사삭 · 겹겹의 결",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_cake",
+    "name": "케이크 폭신",
+    "en": "Original synthesized cake",
+    "desc": "폭 · 크림처럼 부드럽게",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_waffle",
+    "name": "와플 바삭",
+    "en": "Original synthesized waffle",
+    "desc": "자작 · 고소한 격자",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_gummy",
+    "name": "곰젤리 쫀득",
+    "en": "Original synthesized gummy",
+    "desc": "꾸욱 · 말랑한 곰젤리",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_egg",
+    "name": "프라이 지글",
+    "en": "Original synthesized egg",
+    "desc": "치익 · 작은 팬 위에서",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_paw",
+    "name": "젤리발 톡",
+    "en": "Original synthesized paw",
+    "desc": "뽁 · 포근한 발바닥",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_heart",
+    "name": "하트 두근",
+    "en": "Original synthesized heart",
+    "desc": "두근 · 작은 심장",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_star",
+    "name": "별사탕 반짝",
+    "en": "Original synthesized star",
+    "desc": "띠링 · 반짝이는 결정",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_cloud",
+    "name": "구름 사르르",
+    "en": "Original synthesized cloud",
+    "desc": "사르르 · 공기 같은 쉼",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "shape_cat",
+    "name": "고양이 골골",
+    "en": "Original synthesized cat",
+    "desc": "그르릉 · 낮고 편안하게",
+    "category": "shape",
+    "effect": true,
+    "sw": "#e8d6c4",
+    "swb": "#bfa58d",
+    "stem": "#ae8565"
+  },
+  {
+    "id": "scratch_paper",
+    "name": "종이 사각",
+    "en": "Original synthesized paper",
+    "desc": "사각사각 · 종이를 스치는 결",
+    "category": "scratch",
+    "effect": true,
+    "sw": "#e4dfcf",
+    "swb": "#bdb39a",
+    "stem": "#9d8d6b"
+  },
+  {
+    "id": "scratch_pencil",
+    "name": "연필 사각",
+    "en": "Original synthesized pencil",
+    "desc": "서걱서걱 · 연필 끝의 마찰",
+    "category": "scratch",
+    "effect": true,
+    "sw": "#e4dfcf",
+    "swb": "#bdb39a",
+    "stem": "#9d8d6b"
+  },
+  {
+    "id": "scratch_sand",
+    "name": "모래 사각",
+    "en": "Original synthesized sand",
+    "desc": "자르륵 · 고운 모래 알갱이",
+    "category": "scratch",
+    "effect": true,
+    "sw": "#e4dfcf",
+    "swb": "#bdb39a",
+    "stem": "#9d8d6b"
+  },
+  {
+    "id": "scratch_snow",
+    "name": "눈길 뽀드득",
+    "en": "Original synthesized snow",
+    "desc": "뽀드득 · 새 눈을 밟는 소리",
+    "category": "scratch",
+    "effect": true,
+    "sw": "#e4dfcf",
+    "swb": "#bdb39a",
+    "stem": "#9d8d6b"
+  },
+  {
+    "id": "scratch_brush",
+    "name": "솔 사각",
+    "en": "Original synthesized brush",
+    "desc": "사사삭 · 부드러운 솔질",
+    "category": "scratch",
+    "effect": true,
+    "sw": "#e4dfcf",
+    "swb": "#bdb39a",
+    "stem": "#9d8d6b"
+  }
+]
