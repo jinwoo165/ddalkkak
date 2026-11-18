@@ -1,5 +1,7 @@
 # 딸깍 · 키캡 스튜디오 2.0
 
+[앱 열기](https://jinwoo165.github.io/ddalkkak/) · [Android](https://jinwoo165.github.io/ddalkkak/?platform=android) · [iPhone](https://jinwoo165.github.io/ddalkkak/?platform=ios)
+
 APK 없이 브라우저에서 사용하는 설치형 웹앱입니다. GitHub Pages는 main 브랜치의 /docs를 게시합니다.
 
 - 모양 16종, 기존 스위치·효과음 19종 보존
